@@ -39,6 +39,6 @@ int main(void){
 	cout << "Sorting Time for Parallel Implementation: " << end - start << endl;
 
 	for (int i = 0; i < size; i++)
-		cout << arr[i] << endl;
+		cout << arr[i] << " ";
 	return 0;
 }
