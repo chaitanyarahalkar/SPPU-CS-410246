@@ -4,7 +4,8 @@
 #include <vector>
 #include <time.h>
 
-using namespace std;
+using std::cout;
+using std::endl;
 
 void swap(int &x,int &y){
 
