@@ -1,0 +1,37 @@
+Pickup(x):
+  Preconditions:
+    - arm empty
+    - on(x,table)
+    - clear(x)
+  Action:
+    - holding(x)
+
+
+Putdown(x):
+  Preconditions:
+    - holding(x)
+
+  Action:
+    - arm empty
+    - on(x,table)
+    - clear(x)
+
+Stack(x,y):
+  Preconditions:
+    - holding(x)
+    - clear(y)
+
+  Action:
+    - on(x,y)
+    - clear(x)
+    - arm empty
+
+Unstack(x,y):
+  Preconditions:
+    - on(x,y)
+    - clear(x)
+    - arm empty
+
+  Action:
+    - holding(x)
+    - clear(y)
