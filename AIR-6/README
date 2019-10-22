@@ -1,0 +1,8 @@
+Compilation: 
+
+javac *.java
+
+Running:
+
+java alphaBeta
+
