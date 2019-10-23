@@ -5,6 +5,8 @@ import matplotlib.pyplot as plt
 FILE = "Iris.csv"
 data = pd.read_csv(FILE,encoding='utf-8')
 
+cols = data.columns
+
 print("Dataset Features Description")
 print(data.describe())
 
